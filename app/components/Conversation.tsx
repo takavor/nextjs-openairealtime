@@ -6,6 +6,8 @@ import { RealtimeClient } from "@openai/realtime-api-beta";
 import { ItemType } from "@openai/realtime-api-beta/dist/lib/client.js";
 import { WavRecorder, WavStreamPlayer } from "@/lib/wavtools/index.js";
 
+import { instructions } from "@/utils/conversation_config";
+
 const LOCAL_RELAY_SERVER_URL: string =
   process.env.NEXT_PUBLIC_LOCAL_RELAY_SERVER_URL || "";
 
@@ -38,8 +40,7 @@ export default function Conversation() {
 
     client.updateSession({
       turn_detection: { type: "server_vad" },
-      instructions:
-        "You are a supervisor at a company meant to interview a candidate. Your name is John. Always reply with audio.",
+      instructions: instructions,
     });
 
     setItems(client.conversation.getItems());
