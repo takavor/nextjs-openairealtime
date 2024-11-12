@@ -59,7 +59,7 @@ export default function Conversation() {
     client.sendUserMessageContent([
       {
         type: `input_text`,
-        text: `Hello! My name is Sevag.`,
+        text: `Hello!`,
       },
     ]);
 
@@ -124,12 +124,17 @@ export default function Conversation() {
         className="bg-gray-200 p-2 m-2 rounded-sm"
         onClick={isConnected ? disconnectConversation : connectConversation}
       >
-        {isConnected ? "Disconnect" : "Connect conversation"}
+        {isConnected ? "Disconnect conversation" : "Start conversation"}
       </button>
       {items.map((conversationItem, i) => {
         return (
           conversationItem.formatted.file && (
-            <audio key={i} src={conversationItem.formatted.file.url} controls />
+            <audio
+              hidden
+              key={i}
+              src={conversationItem.formatted.file.url}
+              controls
+            />
           )
         );
       })}
