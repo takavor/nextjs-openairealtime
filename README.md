@@ -2,7 +2,7 @@
 
 This is a sample Next.js project with an OpenAI Realtime API Conversation integration using a relay server. It's a copy of the [React Realtime Console](https://github.com/openai/openai-realtime-console) offered by OpenAI, simplified and all of the functions removed. This can give you a starting point for integrating the API in your Next.js web app.
 
-Right now, the project simply consists of a button that activates starts the conversation upon clicking. Make sure to have a microphone connected to your system for the conversation flow to work.
+Right now, the project simply consists of a button that starts the conversation upon clicking. Make sure to have a microphone connected to your system for the conversation flow to work.
 
 ## Installation
 Clone the repo and install dependencies:
