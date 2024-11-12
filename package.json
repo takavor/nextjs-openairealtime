@@ -11,11 +11,12 @@
   },
   "dependencies": {
     "@openai/realtime-api-beta": "github:openai/openai-realtime-api-beta",
+    "@prisma/client": "^5.22.0",
+    "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
-    "dotenv": "^16.4.5"
+    "react-dom": "19.0.0-rc-66855b96-20241106"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
@@ -24,9 +25,10 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "15.0.3",
+    "nodemon": "^3.1.7",
     "postcss": "^8",
+    "prisma": "^5.22.0",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5",
-    "nodemon": "^3.1.7"
+    "typescript": "^5"
   }
 }
